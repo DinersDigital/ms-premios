@@ -13,7 +13,7 @@
   	<module>domain</module>
   </modules>
   
-  <!-- start properties maven repository -->
+  <!-- start properties maven repository 
   <properties>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -29,11 +29,11 @@
     <docker-plugin.version>0.34.1</docker-plugin.version>
     <quarkus.logging.version>0.2.3</quarkus.logging.version>
     <jacoco.version>0.8.4</jacoco.version>
-  </properties>
+  </properties>-->
   <!-- end properties maven repository -->
   
   <!-- start properties redhat repository -->
-  <!--<properties>
+  <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.parameters>true</maven.compiler.parameters>
     <maven.compiler.source>11</maven.compiler.source>
@@ -48,7 +48,7 @@
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
     <quarkus.logging.version>0.2.3</quarkus.logging.version>
     <jacoco.version>0.8.4</jacoco.version>
-  </properties>-->
+  </properties>
   <!-- end properties redhat repository -->
 	
   <dependencyManagement>
