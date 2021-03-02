@@ -1,0 +1,6 @@
+ec\com\dinersclub\dddmodules\infrastructure\pgsql\repository\PremioRepository.class
+ec\com\dinersclub\dddmodules\infrastructure\pgsql\repository\TarjetaRepository.class
+ec\com\dinersclub\dddmodules\infrastructure\service\InfrastructureServiceImpl.class
+ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\PremioEntity.class
+META-INF\panache-archive.marker
+ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\TarjetaEntity.class
