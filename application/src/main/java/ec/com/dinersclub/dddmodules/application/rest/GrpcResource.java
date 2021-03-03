@@ -9,8 +9,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreatePremioCommand;
 import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreateTarjetaCommand;
+import ec.com.dinersclub.dddmodules.application.services.PremioService;
 import ec.com.dinersclub.dddmodules.application.services.TarjetaService;
+
+
+
 
 
 @Path("/grpc")
@@ -18,6 +23,9 @@ public class GrpcResource {
 	
 	@Inject
     TarjetaService client;
+	
+	@Inject
+	PremioService clientPremio;
 
 	
     @GET
@@ -31,6 +39,12 @@ public class GrpcResource {
     public Response add(@Valid CreateTarjetaCommand command) {
     	client.createTarjetaCommand(command);
     	return Response.status(201).build();
+    } 
+  
+    @POST
+    @Path("premios")
+    public Response addPremio(@Valid CreatePremioCommand command) {
+    	clientPremio.createPremioCommand(command);
+    	return Response.status(201).build();
     }
-    
 }

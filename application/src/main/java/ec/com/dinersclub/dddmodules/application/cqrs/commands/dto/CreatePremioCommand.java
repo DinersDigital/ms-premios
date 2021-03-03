@@ -5,15 +5,15 @@ import javax.validation.constraints.NotBlank;
 public class CreatePremioCommand {
 	
     @NotBlank(message="id may not be blank")
-	private Integer id; 
+	private String id; 
     private String idCliente;
     private String idCampania;
     private String valorPremio;
     private String status;
-	public Integer getId() {
+	public @NotBlank(message = "id may not be blank") String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(@NotBlank(message = "id may not be blank") String id) {
 		this.id = id;
 	}
 	public String getIdCliente() {

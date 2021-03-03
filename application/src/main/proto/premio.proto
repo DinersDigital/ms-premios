@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ec.com.dinersclub.dddmodules.application.grpc";
+option java_outer_classname = "PremioProto";
+
+package grpc;
+
+service Premio {
+    rpc createPremioCommand (PremioRequest) returns (PremioResponse) {}
+}
+
+message PremioRequest {
+    string id = 1;
+    string idCliente = 2;
+    string idCampania= 3;
+    string valorPremio= 4;
+}
+
+message PremioResponse {
+    string id = 1;
+}

@@ -15,7 +15,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 public class PremioEntity extends PanacheEntityBase {
 	
 	@Id
-	private Integer id; 
+	private String id; 
     private String idCliente;
     private String idCampania;
     private String valorPremio;
@@ -39,7 +39,7 @@ public class PremioEntity extends PanacheEntityBase {
     }
       
       
-    public PremioEntity(Integer id, String idCliente, String idCampania, String valorPremio, String status) {
+    public PremioEntity(String id, String idCliente, String idCampania, String valorPremio, String status) {
 		super();
 		this.id = id;
 		this.idCliente = idCliente;
@@ -66,12 +66,12 @@ public class PremioEntity extends PanacheEntityBase {
         return new Premio(getId(), getIdCliente(), getIdCampania(), getValorPremio(),getStatus());
     }
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

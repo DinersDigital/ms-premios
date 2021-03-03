@@ -2,18 +2,18 @@ package ec.com.dinersclub.dddmodules.domain.model;
 
 public class Premio {
 
-	private Integer id; 
+	private String id; 
     private String idCliente;
     private String idCampania;
     private String valorPremio;
     private String status;
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 	
 	
 	
-	public Premio(Integer id, String idCliente, String idCampania, String valorPremio, String status) {
+	public Premio(String id, String idCliente, String idCampania, String valorPremio, String status) {
 		super();
 		this.id = id;
 		this.idCliente = idCliente;
@@ -24,7 +24,7 @@ public class Premio {
 
 
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getIdCliente() {
