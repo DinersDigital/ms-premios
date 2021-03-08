@@ -6,6 +6,6 @@ public interface IPremioCommandService {
 	
 	void createPremioCommand(CreatePremioCommand command);
 	
-	void removePremioCommand(int id);
+	void removePremioCommand(String id);
 
 }

@@ -20,6 +20,6 @@ public interface IRepository {
     
     List<Premio> getPremio();
     
-
+    void deletePremio(String id);
 
 }

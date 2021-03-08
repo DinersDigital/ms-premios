@@ -5,33 +5,34 @@ import javax.validation.constraints.NotBlank;
 public class CreatePremioCommand {
 	
     @NotBlank(message="id may not be blank")
-	private String id; 
-    private String idCliente;
-    private String idCampania;
-    private String valorPremio;
+	private Integer id; 
+    private Integer idCliente;
+    private Integer idCampania;
+    private Double valorPremio;
     private String status;
-	public @NotBlank(message = "id may not be blank") String getId() {
+	public @NotBlank(message = "id may not be blank") Integer getId() {
 		return id;
 	}
-	public void setId(@NotBlank(message = "id may not be blank") String id) {
+	public void setId(@NotBlank(message = "id may not be blank") Integer id) {
 		this.id = id;
 	}
-	public String getIdCliente() {
+
+	public Integer getIdCliente() {
 		return idCliente;
 	}
-	public void setIdCliente(String idCliente) {
+	public void setIdCliente(Integer idCliente) {
 		this.idCliente = idCliente;
 	}
-	public String getIdCampania() {
+	public Integer getIdCampania() {
 		return idCampania;
 	}
-	public void setIdCampania(String idCampania) {
+	public void setIdCampania(Integer idCampania) {
 		this.idCampania = idCampania;
 	}
-	public String getValorPremio() {
+	public Double getValorPremio() {
 		return valorPremio;
 	}
-	public void setValorPremio(String valorPremio) {
+	public void setValorPremio(Double valorPremio) {
 		this.valorPremio = valorPremio;
 	}
 	public String getStatus() {

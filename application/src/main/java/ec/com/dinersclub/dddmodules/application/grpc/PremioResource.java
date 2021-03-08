@@ -18,10 +18,10 @@ public class PremioResource extends MutinyPremioGrpc.PremioImplBase {
     @Override
     @Blocking
     public Uni<PremioResponse> createPremioCommand(PremioRequest request) { 
-    	String id = request.getId();
-    	String idCliente = request.getIdCliente();
-        String idCampania= request.getIdCampania();
-        String valorPremio= request.getValorPremio();
+    	Integer id = request.getId();
+    	Integer idCliente = request.getIdCliente();
+    	Integer idCampania= request.getIdCampania();
+        Double valorPremio= request.getValorPremio();
         String status = "1";
         CreatePremioCommand command = new CreatePremioCommand();
         command.setId(id);

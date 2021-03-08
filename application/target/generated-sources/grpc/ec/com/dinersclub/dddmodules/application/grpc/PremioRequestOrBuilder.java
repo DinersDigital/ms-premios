@@ -8,50 +8,26 @@ public interface PremioRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string id = 1;</code>
+   * <code>int32 id = 1;</code>
    * @return The id.
    */
-  java.lang.String getId();
-  /**
-   * <code>string id = 1;</code>
-   * @return The bytes for id.
-   */
-  com.google.protobuf.ByteString
-      getIdBytes();
+  int getId();
 
   /**
-   * <code>string idCliente = 2;</code>
+   * <code>int32 idCliente = 2;</code>
    * @return The idCliente.
    */
-  java.lang.String getIdCliente();
-  /**
-   * <code>string idCliente = 2;</code>
-   * @return The bytes for idCliente.
-   */
-  com.google.protobuf.ByteString
-      getIdClienteBytes();
+  int getIdCliente();
 
   /**
-   * <code>string idCampania = 3;</code>
+   * <code>int32 idCampania = 3;</code>
    * @return The idCampania.
    */
-  java.lang.String getIdCampania();
-  /**
-   * <code>string idCampania = 3;</code>
-   * @return The bytes for idCampania.
-   */
-  com.google.protobuf.ByteString
-      getIdCampaniaBytes();
+  int getIdCampania();
 
   /**
-   * <code>string valorPremio = 4;</code>
+   * <code>double valorPremio = 4;</code>
    * @return The valorPremio.
    */
-  java.lang.String getValorPremio();
-  /**
-   * <code>string valorPremio = 4;</code>
-   * @return The bytes for valorPremio.
-   */
-  com.google.protobuf.ByteString
-      getValorPremioBytes();
+  double getValorPremio();
 }

@@ -11,12 +11,12 @@ service Premio {
 }
 
 message PremioRequest {
-    string id = 1;
-    string idCliente = 2;
-    string idCampania= 3;
-    string valorPremio= 4;
+    int32 id = 1;
+    int32 idCliente = 2;
+    int32 idCampania= 3;
+    double valorPremio= 4;
 }
 
 message PremioResponse {
-    string id = 1;
+    int32 id = 1;
 }

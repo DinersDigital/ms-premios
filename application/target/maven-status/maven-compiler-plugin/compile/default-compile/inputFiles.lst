@@ -1,36 +1,39 @@
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\TarjetaCommandServiceImpl.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioResponse.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\ITarjetaQueryService.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\logs\Logging.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioResponseOrBuilder.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\PremioCommandServiceImpl.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\AuditoriaEventImpl.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\services\PremioService.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\IAuditoriaEvent.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\logs\ILogging.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\PremioResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\MutinyPremioGrpc.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\dto\Auditoria.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\TarjetaResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\MutinyTarjetaGrpc.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioRequestOrBuilder.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\AuditResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaProto.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResponse.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\ITarjetaCommandService.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioRequest.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaRequest.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\dto\CreatePremioCommand.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\TarjetaQueryServiceImpl.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\grpc\PremioResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResponseOrBuilder.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\dto\CreateTarjetaCommand.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioGrpc.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\services\TarjetaService.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\dto\TarjetaQuery.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioProto.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\GrpcResource.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaRequestOrBuilder.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\IPremioCommandService.java
-C:\Users\Juan Fajardo\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaGrpc.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\ITarjetaQueryService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResponse.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\MutinyTarjetaGrpc.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaRequest.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\ITarjetaCommandService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\GrpcResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioRequestOrBuilder.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\TarjetaQueryServiceImpl.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\dto\PremioQuery.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioRequest.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResponseOrBuilder.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\logs\Logging.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\TarjetaResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\grpc\PremioResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\dto\TarjetaQuery.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\grpc\TarjetaResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\IAuditoriaEvent.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaGrpc.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\dto\CreatePremioCommand.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioProto.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\dto\Auditoria.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioGrpc.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaProto.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\MutinyPremioGrpc.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\IPremioQueryService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioResponse.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\services\PremioService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\services\TarjetaService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\AuditResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\PremioCommandServiceImpl.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\IPremioCommandService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\queries\PremioQueryServiceImpl.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\PremioResponseOrBuilder.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\target\generated-sources\grpc\ec\com\dinersclub\dddmodules\application\grpc\TarjetaRequestOrBuilder.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\TarjetaCommandServiceImpl.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\rest\PremioResource.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\logs\ILogging.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\events\audit\AuditoriaEventImpl.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\application\src\main\java\ec\com\dinersclub\dddmodules\application\cqrs\commands\dto\CreateTarjetaCommand.java

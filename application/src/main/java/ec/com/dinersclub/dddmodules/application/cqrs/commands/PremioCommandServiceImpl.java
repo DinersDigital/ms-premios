@@ -20,9 +20,12 @@ public class PremioCommandServiceImpl implements IPremioCommandService{
 	}
 
 	@Override
-	public void removePremioCommand(int id) {
-		premioRepository.getClass();
+	public void removePremioCommand(String id) {
+		premioRepository.deletePremio(id);;
 		
 	}
+	
+
+	
 	
 }

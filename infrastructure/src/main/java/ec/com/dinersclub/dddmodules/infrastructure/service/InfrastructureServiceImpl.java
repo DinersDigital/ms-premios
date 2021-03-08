@@ -79,4 +79,10 @@ public class InfrastructureServiceImpl implements IRepository {
         }
 	}
 
+	@Override
+	public void deletePremio(String id) {
+		PremioEntity.delete("id", id);
+		
+	}
+
 }

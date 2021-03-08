@@ -16,10 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PremioRequest() {
-    id_ = "";
-    idCliente_ = "";
-    idCampania_ = "";
-    valorPremio_ = "";
   }
 
   @java.lang.Override
@@ -52,28 +48,24 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+          case 8: {
 
-            id_ = s;
+            id_ = input.readInt32();
             break;
           }
-          case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
+          case 16: {
 
-            idCliente_ = s;
+            idCliente_ = input.readInt32();
             break;
           }
-          case 26: {
-            java.lang.String s = input.readStringRequireUtf8();
+          case 24: {
 
-            idCampania_ = s;
+            idCampania_ = input.readInt32();
             break;
           }
-          case 34: {
-            java.lang.String s = input.readStringRequireUtf8();
+          case 33: {
 
-            valorPremio_ = s;
+            valorPremio_ = input.readDouble();
             break;
           }
           default: {
@@ -109,155 +101,47 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private volatile java.lang.Object id_;
+  private int id_;
   /**
-   * <code>string id = 1;</code>
+   * <code>int32 id = 1;</code>
    * @return The id.
    */
   @java.lang.Override
-  public java.lang.String getId() {
-    java.lang.Object ref = id_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      id_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string id = 1;</code>
-   * @return The bytes for id.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getIdBytes() {
-    java.lang.Object ref = id_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      id_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public int getId() {
+    return id_;
   }
 
   public static final int IDCLIENTE_FIELD_NUMBER = 2;
-  private volatile java.lang.Object idCliente_;
+  private int idCliente_;
   /**
-   * <code>string idCliente = 2;</code>
+   * <code>int32 idCliente = 2;</code>
    * @return The idCliente.
    */
   @java.lang.Override
-  public java.lang.String getIdCliente() {
-    java.lang.Object ref = idCliente_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      idCliente_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string idCliente = 2;</code>
-   * @return The bytes for idCliente.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getIdClienteBytes() {
-    java.lang.Object ref = idCliente_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      idCliente_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public int getIdCliente() {
+    return idCliente_;
   }
 
   public static final int IDCAMPANIA_FIELD_NUMBER = 3;
-  private volatile java.lang.Object idCampania_;
+  private int idCampania_;
   /**
-   * <code>string idCampania = 3;</code>
+   * <code>int32 idCampania = 3;</code>
    * @return The idCampania.
    */
   @java.lang.Override
-  public java.lang.String getIdCampania() {
-    java.lang.Object ref = idCampania_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      idCampania_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string idCampania = 3;</code>
-   * @return The bytes for idCampania.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getIdCampaniaBytes() {
-    java.lang.Object ref = idCampania_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      idCampania_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public int getIdCampania() {
+    return idCampania_;
   }
 
   public static final int VALORPREMIO_FIELD_NUMBER = 4;
-  private volatile java.lang.Object valorPremio_;
+  private double valorPremio_;
   /**
-   * <code>string valorPremio = 4;</code>
+   * <code>double valorPremio = 4;</code>
    * @return The valorPremio.
    */
   @java.lang.Override
-  public java.lang.String getValorPremio() {
-    java.lang.Object ref = valorPremio_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      valorPremio_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string valorPremio = 4;</code>
-   * @return The bytes for valorPremio.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getValorPremioBytes() {
-    java.lang.Object ref = valorPremio_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      valorPremio_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public double getValorPremio() {
+    return valorPremio_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -274,17 +158,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+    if (id_ != 0) {
+      output.writeInt32(1, id_);
     }
-    if (!getIdClienteBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, idCliente_);
+    if (idCliente_ != 0) {
+      output.writeInt32(2, idCliente_);
     }
-    if (!getIdCampaniaBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, idCampania_);
+    if (idCampania_ != 0) {
+      output.writeInt32(3, idCampania_);
     }
-    if (!getValorPremioBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, valorPremio_);
+    if (valorPremio_ != 0D) {
+      output.writeDouble(4, valorPremio_);
     }
     unknownFields.writeTo(output);
   }
@@ -295,17 +179,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+    if (id_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(1, id_);
     }
-    if (!getIdClienteBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, idCliente_);
+    if (idCliente_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(2, idCliente_);
     }
-    if (!getIdCampaniaBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, idCampania_);
+    if (idCampania_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, idCampania_);
     }
-    if (!getValorPremioBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, valorPremio_);
+    if (valorPremio_ != 0D) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeDoubleSize(4, valorPremio_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -322,14 +210,15 @@ private static final long serialVersionUID = 0L;
     }
     ec.com.dinersclub.dddmodules.application.grpc.PremioRequest other = (ec.com.dinersclub.dddmodules.application.grpc.PremioRequest) obj;
 
-    if (!getId()
-        .equals(other.getId())) return false;
-    if (!getIdCliente()
-        .equals(other.getIdCliente())) return false;
-    if (!getIdCampania()
-        .equals(other.getIdCampania())) return false;
-    if (!getValorPremio()
-        .equals(other.getValorPremio())) return false;
+    if (getId()
+        != other.getId()) return false;
+    if (getIdCliente()
+        != other.getIdCliente()) return false;
+    if (getIdCampania()
+        != other.getIdCampania()) return false;
+    if (java.lang.Double.doubleToLongBits(getValorPremio())
+        != java.lang.Double.doubleToLongBits(
+            other.getValorPremio())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -342,13 +231,14 @@ private static final long serialVersionUID = 0L;
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
-    hash = (53 * hash) + getId().hashCode();
+    hash = (53 * hash) + getId();
     hash = (37 * hash) + IDCLIENTE_FIELD_NUMBER;
-    hash = (53 * hash) + getIdCliente().hashCode();
+    hash = (53 * hash) + getIdCliente();
     hash = (37 * hash) + IDCAMPANIA_FIELD_NUMBER;
-    hash = (53 * hash) + getIdCampania().hashCode();
+    hash = (53 * hash) + getIdCampania();
     hash = (37 * hash) + VALORPREMIO_FIELD_NUMBER;
-    hash = (53 * hash) + getValorPremio().hashCode();
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        java.lang.Double.doubleToLongBits(getValorPremio()));
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -482,13 +372,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      id_ = "";
+      id_ = 0;
 
-      idCliente_ = "";
+      idCliente_ = 0;
 
-      idCampania_ = "";
+      idCampania_ = 0;
 
-      valorPremio_ = "";
+      valorPremio_ = 0D;
 
       return this;
     }
@@ -568,21 +458,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(ec.com.dinersclub.dddmodules.application.grpc.PremioRequest other) {
       if (other == ec.com.dinersclub.dddmodules.application.grpc.PremioRequest.getDefaultInstance()) return this;
-      if (!other.getId().isEmpty()) {
-        id_ = other.id_;
-        onChanged();
+      if (other.getId() != 0) {
+        setId(other.getId());
       }
-      if (!other.getIdCliente().isEmpty()) {
-        idCliente_ = other.idCliente_;
-        onChanged();
+      if (other.getIdCliente() != 0) {
+        setIdCliente(other.getIdCliente());
       }
-      if (!other.getIdCampania().isEmpty()) {
-        idCampania_ = other.idCampania_;
-        onChanged();
+      if (other.getIdCampania() != 0) {
+        setIdCampania(other.getIdCampania());
       }
-      if (!other.getValorPremio().isEmpty()) {
-        valorPremio_ = other.valorPremio_;
-        onChanged();
+      if (other.getValorPremio() != 0D) {
+        setValorPremio(other.getValorPremio());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -613,306 +499,126 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object id_ = "";
+    private int id_ ;
     /**
-     * <code>string id = 1;</code>
+     * <code>int32 id = 1;</code>
      * @return The id.
      */
-    public java.lang.String getId() {
-      java.lang.Object ref = id_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        id_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
     /**
-     * <code>string id = 1;</code>
-     * @return The bytes for id.
-     */
-    public com.google.protobuf.ByteString
-        getIdBytes() {
-      java.lang.Object ref = id_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        id_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string id = 1;</code>
+     * <code>int32 id = 1;</code>
      * @param value The id to set.
      * @return This builder for chaining.
      */
-    public Builder setId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+    public Builder setId(int value) {
+      
       id_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string id = 1;</code>
+     * <code>int32 id = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearId() {
       
-      id_ = getDefaultInstance().getId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string id = 1;</code>
-     * @param value The bytes for id to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      id_ = value;
+      id_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object idCliente_ = "";
+    private int idCliente_ ;
     /**
-     * <code>string idCliente = 2;</code>
+     * <code>int32 idCliente = 2;</code>
      * @return The idCliente.
      */
-    public java.lang.String getIdCliente() {
-      java.lang.Object ref = idCliente_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        idCliente_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    @java.lang.Override
+    public int getIdCliente() {
+      return idCliente_;
     }
     /**
-     * <code>string idCliente = 2;</code>
-     * @return The bytes for idCliente.
-     */
-    public com.google.protobuf.ByteString
-        getIdClienteBytes() {
-      java.lang.Object ref = idCliente_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        idCliente_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string idCliente = 2;</code>
+     * <code>int32 idCliente = 2;</code>
      * @param value The idCliente to set.
      * @return This builder for chaining.
      */
-    public Builder setIdCliente(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+    public Builder setIdCliente(int value) {
+      
       idCliente_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string idCliente = 2;</code>
+     * <code>int32 idCliente = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearIdCliente() {
       
-      idCliente_ = getDefaultInstance().getIdCliente();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string idCliente = 2;</code>
-     * @param value The bytes for idCliente to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIdClienteBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      idCliente_ = value;
+      idCliente_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object idCampania_ = "";
+    private int idCampania_ ;
     /**
-     * <code>string idCampania = 3;</code>
+     * <code>int32 idCampania = 3;</code>
      * @return The idCampania.
      */
-    public java.lang.String getIdCampania() {
-      java.lang.Object ref = idCampania_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        idCampania_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    @java.lang.Override
+    public int getIdCampania() {
+      return idCampania_;
     }
     /**
-     * <code>string idCampania = 3;</code>
-     * @return The bytes for idCampania.
-     */
-    public com.google.protobuf.ByteString
-        getIdCampaniaBytes() {
-      java.lang.Object ref = idCampania_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        idCampania_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string idCampania = 3;</code>
+     * <code>int32 idCampania = 3;</code>
      * @param value The idCampania to set.
      * @return This builder for chaining.
      */
-    public Builder setIdCampania(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+    public Builder setIdCampania(int value) {
+      
       idCampania_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string idCampania = 3;</code>
+     * <code>int32 idCampania = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearIdCampania() {
       
-      idCampania_ = getDefaultInstance().getIdCampania();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string idCampania = 3;</code>
-     * @param value The bytes for idCampania to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIdCampaniaBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      idCampania_ = value;
+      idCampania_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object valorPremio_ = "";
+    private double valorPremio_ ;
     /**
-     * <code>string valorPremio = 4;</code>
+     * <code>double valorPremio = 4;</code>
      * @return The valorPremio.
      */
-    public java.lang.String getValorPremio() {
-      java.lang.Object ref = valorPremio_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        valorPremio_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    @java.lang.Override
+    public double getValorPremio() {
+      return valorPremio_;
     }
     /**
-     * <code>string valorPremio = 4;</code>
-     * @return The bytes for valorPremio.
-     */
-    public com.google.protobuf.ByteString
-        getValorPremioBytes() {
-      java.lang.Object ref = valorPremio_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        valorPremio_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string valorPremio = 4;</code>
+     * <code>double valorPremio = 4;</code>
      * @param value The valorPremio to set.
      * @return This builder for chaining.
      */
-    public Builder setValorPremio(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+    public Builder setValorPremio(double value) {
+      
       valorPremio_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string valorPremio = 4;</code>
+     * <code>double valorPremio = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearValorPremio() {
       
-      valorPremio_ = getDefaultInstance().getValorPremio();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string valorPremio = 4;</code>
-     * @param value The bytes for valorPremio to set.
-     * @return This builder for chaining.
-     */
-    public Builder setValorPremioBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      valorPremio_ = value;
+      valorPremio_ = 0D;
       onChanged();
       return this;
     }

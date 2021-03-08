@@ -34,9 +34,9 @@ public final class PremioProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\014premio.proto\022\004grpc\"W\n\rPremioRequest\022\n\n" +
-      "\002id\030\001 \001(\t\022\021\n\tidCliente\030\002 \001(\t\022\022\n\nidCampan" +
-      "ia\030\003 \001(\t\022\023\n\013valorPremio\030\004 \001(\t\"\034\n\016PremioR" +
-      "esponse\022\n\n\002id\030\001 \001(\t2L\n\006Premio\022B\n\023createP" +
+      "\002id\030\001 \001(\005\022\021\n\tidCliente\030\002 \001(\005\022\022\n\nidCampan" +
+      "ia\030\003 \001(\005\022\023\n\013valorPremio\030\004 \001(\001\"\034\n\016PremioR" +
+      "esponse\022\n\n\002id\030\001 \001(\0052L\n\006Premio\022B\n\023createP" +
       "remioCommand\022\023.grpc.PremioRequest\032\024.grpc" +
       ".PremioResponse\"\000B>\n-ec.com.dinersclub.d" +
       "ddmodules.application.grpcB\013PremioProtoP" +

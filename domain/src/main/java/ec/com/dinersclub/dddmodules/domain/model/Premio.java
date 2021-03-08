@@ -2,18 +2,17 @@ package ec.com.dinersclub.dddmodules.domain.model;
 
 public class Premio {
 
-	private String id; 
-    private String idCliente;
-    private String idCampania;
-    private String valorPremio;
-    private String status;
-	public String getId() {
+	private Integer id;
+	private Integer idCliente;
+	private Integer idCampania;
+	private Double valorPremio;
+	private String status;
+
+	public Integer getId() {
 		return id;
 	}
-	
-	
-	
-	public Premio(String id, String idCliente, String idCampania, String valorPremio, String status) {
+
+	public Premio(Integer id, Integer idCliente, Integer idCampania, Double valorPremio, String status) {
 		super();
 		this.id = id;
 		this.idCliente = idCliente;
@@ -22,36 +21,40 @@ public class Premio {
 		this.status = status;
 	}
 
-
-
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getIdCliente() {
+	public Integer getIdCliente() {
 		return idCliente;
 	}
-	public void setIdCliente(String idCliente) {
+
+	public void setIdCliente(Integer idCliente) {
 		this.idCliente = idCliente;
 	}
-	public String getIdCampania() {
+
+	public Integer getIdCampania() {
 		return idCampania;
 	}
-	public void setIdCampania(String idCampania) {
+
+	public void setIdCampania(Integer idCampania) {
 		this.idCampania = idCampania;
 	}
-	public String getValorPremio() {
+
+	public Double getValorPremio() {
 		return valorPremio;
 	}
-	public void setValorPremio(String valorPremio) {
+
+	public void setValorPremio(Double valorPremio) {
 		this.valorPremio = valorPremio;
 	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	public String getStatus() {
 		return status;
 	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
-    
-    
-    
+
 }

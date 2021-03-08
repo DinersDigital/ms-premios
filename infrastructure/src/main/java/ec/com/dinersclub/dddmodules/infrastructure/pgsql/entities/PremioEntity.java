@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import ec.com.dinersclub.dddmodules.domain.model.Premio;
+import ec.com.dinersclub.dddmodules.domain.model.Tarjeta;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 @Entity
@@ -15,10 +16,10 @@ import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 public class PremioEntity extends PanacheEntityBase {
 	
 	@Id
-	private String id; 
-    private String idCliente;
-    private String idCampania;
-    private String valorPremio;
+	private Integer id; 
+    private Integer idCliente;
+    private Integer idCampania;
+    private Double valorPremio;
     private String status;
     
    
@@ -39,7 +40,7 @@ public class PremioEntity extends PanacheEntityBase {
     }
       
       
-    public PremioEntity(String id, String idCliente, String idCampania, String valorPremio, String status) {
+    public PremioEntity(Integer id, Integer idCliente, Integer idCampania, Double valorPremio, String status) {
 		super();
 		this.id = id;
 		this.idCliente = idCliente;
@@ -63,45 +64,45 @@ public class PremioEntity extends PanacheEntityBase {
    }
     
     public Premio toPremio() {
-        return new Premio(getId(), getIdCliente(), getIdCampania(), getValorPremio(),getStatus());
+        return new Premio(getId(), getIdCliente(), getIdCampania(), getValorPremio(), getStatus());
     }
-
-	public String getId() {
+    
+	public Integer getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
 
-	public String getIdCliente() {
+	public Integer getIdCliente() {
 		return idCliente;
 	}
 
 
-	public void setIdCliente(String idCliente) {
+	public void setIdCliente(Integer idCliente) {
 		this.idCliente = idCliente;
 	}
 
 
-	public String getIdCampania() {
+	public Integer getIdCampania() {
 		return idCampania;
 	}
 
 
-	public void setIdCampania(String idCampania) {
+	public void setIdCampania(Integer idCampania) {
 		this.idCampania = idCampania;
 	}
 
 
-	public String getValorPremio() {
+	public Double getValorPremio() {
 		return valorPremio;
 	}
 
 
-	public void setValorPremio(String valorPremio) {
+	public void setValorPremio(Double valorPremio) {
 		this.valorPremio = valorPremio;
 	}
 
