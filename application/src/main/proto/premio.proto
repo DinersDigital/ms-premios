@@ -6,17 +6,31 @@ option java_outer_classname = "PremioProto";
 
 package grpc;
 
-service Premio {
-    rpc createPremioCommand (PremioRequest) returns (PremioResponse) {}
+service Premios {
+
+	rpc getPremios (ClienteRequest) returns (PremiosResponse) {}
+
 }
 
-message PremioRequest {
-    int32 id = 1;
-    int32 idCliente = 2;
-    int32 idCampania= 3;
-    double valorPremio= 4;
+message ClienteRequest {
+    int32 idCliente = 1;
 }
 
-message PremioResponse {
-    int32 id = 1;
+message PremiosResponse {
+    repeated Premio premios = 1;
+}
+message Premio {
+	int32 idCliente = 1;
+    int32 idCampania = 2;
+	string nombreCampania = 3;
+	double montoTotalCampania = 4;
+    string estadoCampania = 5;
+	double valorTotalConsumos = 6;
+	repeated PremiosAcreditar premiosPorAcreditar = 7;
+}
+
+message PremiosAcreditar {
+	string meta = 1;
+	string nombreRango = 2;
+	double valorPremio = 3;
 }

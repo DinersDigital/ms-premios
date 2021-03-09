@@ -1,5 +1,6 @@
 C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\TarjetaEntity.java
 C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\pgsql\repository\PremioRepository.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\DetallePremioEntity.java
 C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\pgsql\repository\TarjetaRepository.java
 C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\PremioEntity.java
 C:\Users\bayteq\Documents\GitHub\ms-premios\infrastructure\src\main\java\ec\com\dinersclub\dddmodules\infrastructure\service\InfrastructureServiceImpl.java

@@ -1,19 +1,60 @@
 package ec.com.dinersclub.dddmodules.application.cqrs.commands.dto;
 
-import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
+import java.util.List;
+
+import ec.com.dinersclub.dddmodules.domain.model.DetallePremio;
 
 public class CreatePremioCommand {
 	
-    @NotBlank(message="id may not be blank")
-	private Integer id; 
-    private Integer idCliente;
-    private Integer idCampania;
-    private Double valorPremio;
-    private String status;
-	public @NotBlank(message = "id may not be blank") Integer getId() {
+	private Integer id;
+	private Integer idCliente;
+	private Integer idCampania;
+	private String nombreCampania;
+	private Double montoTotalCampania;
+	private String estadoCampania;
+	private Double valorTotalConsumos;
+	private List<DetallePremio> listDetallePremio= new ArrayList<>();
+	
+	
+	
+	public CreatePremioCommand() {
+		
+	}
+
+
+	public CreatePremioCommand(Integer id, Integer idCliente, Integer idCampania, String nombreCampania,
+			Double montoTotalCampania, String estadoCampania, Double valorTotalConsumos,
+			List<DetallePremio> listDetallePremio) {
+		
+		this.id = id;
+		this.idCliente = idCliente;
+		this.idCampania = idCampania;
+		this.nombreCampania = nombreCampania;
+		this.montoTotalCampania = montoTotalCampania;
+		this.estadoCampania = estadoCampania;
+		this.valorTotalConsumos = valorTotalConsumos;
+		this.listDetallePremio = listDetallePremio;
+	}
+	
+	
+	public CreatePremioCommand(Integer idCliente, Integer idCampania, String nombreCampania, Double montoTotalCampania,
+			String estadoCampania, Double valorTotalConsumos, List<DetallePremio> listDetallePremio) {
+		
+		this.idCliente = idCliente;
+		this.idCampania = idCampania;
+		this.nombreCampania = nombreCampania;
+		this.montoTotalCampania = montoTotalCampania;
+		this.estadoCampania = estadoCampania;
+		this.valorTotalConsumos = valorTotalConsumos;
+		this.listDetallePremio = listDetallePremio;
+	}
+
+
+	public Integer getId() {
 		return id;
 	}
-	public void setId(@NotBlank(message = "id may not be blank") Integer id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -29,18 +70,37 @@ public class CreatePremioCommand {
 	public void setIdCampania(Integer idCampania) {
 		this.idCampania = idCampania;
 	}
-	public Double getValorPremio() {
-		return valorPremio;
+	public String getEstadoCampania() {
+		return estadoCampania;
 	}
-	public void setValorPremio(Double valorPremio) {
-		this.valorPremio = valorPremio;
+	public void setEstadoCampania(String estadoCampania) {
+		this.estadoCampania = estadoCampania;
 	}
-	public String getStatus() {
-		return status;
+	public Double getValorTotalConsumos() {
+		return valorTotalConsumos;
 	}
-	public void setStatus(String status) {
-		this.status = status;
+	public void setValorTotalConsumos(Double valorTotalConsumos) {
+		this.valorTotalConsumos = valorTotalConsumos;
 	}
+	public List<DetallePremio> getListDetallePremio() {
+		return listDetallePremio;
+	}
+	public void setListDetallePremio(List<DetallePremio> listDetallePremio) {
+		this.listDetallePremio = listDetallePremio;
+	}
+	public String getNombreCampania() {
+		return nombreCampania;
+	}
+	public void setNombreCampania(String nombreCampania) {
+		this.nombreCampania = nombreCampania;
+	}
+	public Double getMontoTotalCampania() {
+		return montoTotalCampania;
+	}
+	public void setMontoTotalCampania(Double montoTotalCampania) {
+		this.montoTotalCampania = montoTotalCampania;
+	}
+
     
     
     

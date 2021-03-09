@@ -18,8 +18,10 @@ public interface IRepository {
     
     void crearPremio(Premio premio);
     
-    List<Premio> getPremio();
+    List<Premio> getPremio(int id);
     
-    void deletePremio(String id);
+    void deletePremio(int id);
+
+	
 
 }

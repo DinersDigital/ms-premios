@@ -15,15 +15,25 @@ public final class PremioProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_grpc_PremioRequest_descriptor;
+    internal_static_grpc_ClienteRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_grpc_PremioRequest_fieldAccessorTable;
+      internal_static_grpc_ClienteRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_grpc_PremioResponse_descriptor;
+    internal_static_grpc_PremiosResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_grpc_PremioResponse_fieldAccessorTable;
+      internal_static_grpc_PremiosResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_grpc_Premio_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_grpc_Premio_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_grpc_PremiosAcreditar_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_grpc_PremiosAcreditar_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -33,31 +43,49 @@ public final class PremioProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014premio.proto\022\004grpc\"W\n\rPremioRequest\022\n\n" +
-      "\002id\030\001 \001(\005\022\021\n\tidCliente\030\002 \001(\005\022\022\n\nidCampan" +
-      "ia\030\003 \001(\005\022\023\n\013valorPremio\030\004 \001(\001\"\034\n\016PremioR" +
-      "esponse\022\n\n\002id\030\001 \001(\0052L\n\006Premio\022B\n\023createP" +
-      "remioCommand\022\023.grpc.PremioRequest\032\024.grpc" +
-      ".PremioResponse\"\000B>\n-ec.com.dinersclub.d" +
-      "ddmodules.application.grpcB\013PremioProtoP" +
-      "\001b\006proto3"
+      "\n\014premio.proto\022\004grpc\"#\n\016ClienteRequest\022\021" +
+      "\n\tidCliente\030\001 \001(\005\"0\n\017PremiosResponse\022\035\n\007" +
+      "premios\030\001 \003(\0132\014.grpc.Premio\"\314\001\n\006Premio\022\021" +
+      "\n\tidCliente\030\001 \001(\005\022\022\n\nidCampania\030\002 \001(\005\022\026\n" +
+      "\016nombreCampania\030\003 \001(\t\022\032\n\022montoTotalCampa" +
+      "nia\030\004 \001(\001\022\026\n\016estadoCampania\030\005 \001(\t\022\032\n\022val" +
+      "orTotalConsumos\030\006 \001(\001\0223\n\023premiosPorAcred" +
+      "itar\030\007 \003(\0132\026.grpc.PremiosAcreditar\"J\n\020Pr" +
+      "emiosAcreditar\022\014\n\004meta\030\001 \001(\t\022\023\n\013nombreRa" +
+      "ngo\030\002 \001(\t\022\023\n\013valorPremio\030\003 \001(\0012F\n\007Premio" +
+      "s\022;\n\ngetPremios\022\024.grpc.ClienteRequest\032\025." +
+      "grpc.PremiosResponse\"\000B>\n-ec.com.dinersc" +
+      "lub.dddmodules.application.grpcB\013PremioP" +
+      "rotoP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_grpc_PremioRequest_descriptor =
+    internal_static_grpc_ClienteRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_grpc_PremioRequest_fieldAccessorTable = new
+    internal_static_grpc_ClienteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_grpc_PremioRequest_descriptor,
-        new java.lang.String[] { "Id", "IdCliente", "IdCampania", "ValorPremio", });
-    internal_static_grpc_PremioResponse_descriptor =
+        internal_static_grpc_ClienteRequest_descriptor,
+        new java.lang.String[] { "IdCliente", });
+    internal_static_grpc_PremiosResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_grpc_PremioResponse_fieldAccessorTable = new
+    internal_static_grpc_PremiosResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_grpc_PremioResponse_descriptor,
-        new java.lang.String[] { "Id", });
+        internal_static_grpc_PremiosResponse_descriptor,
+        new java.lang.String[] { "Premios", });
+    internal_static_grpc_Premio_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_grpc_Premio_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_grpc_Premio_descriptor,
+        new java.lang.String[] { "IdCliente", "IdCampania", "NombreCampania", "MontoTotalCampania", "EstadoCampania", "ValorTotalConsumos", "PremiosPorAcreditar", });
+    internal_static_grpc_PremiosAcreditar_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_grpc_PremiosAcreditar_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_grpc_PremiosAcreditar_descriptor,
+        new java.lang.String[] { "Meta", "NombreRango", "ValorPremio", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

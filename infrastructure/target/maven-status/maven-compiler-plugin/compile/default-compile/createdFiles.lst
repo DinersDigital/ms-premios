@@ -4,3 +4,4 @@ ec\com\dinersclub\dddmodules\infrastructure\service\InfrastructureServiceImpl.cl
 ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\PremioEntity.class
 META-INF\panache-archive.marker
 ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\TarjetaEntity.class
+ec\com\dinersclub\dddmodules\infrastructure\pgsql\entities\DetallePremioEntity.class

@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ec.com.dinersclub.dddmodules.application.grpc";
+option java_outer_classname = "ConsumoProto";
+
+package grpc;
+
+service ConsumosRegistrados {
+    rpc verificarConsumosRegistradosCliente (ConsumosRegistradosRequest) returns (ConsumosRegistradosResponse) {}
+}
+
+message ConsumosRegistradosRequest {
+    int32 idCliente = 1;
+}
+
+message ConsumosRegistradosResponse {
+    repeated ConsumosRegistradosCampania consumosRegistradosCampania = 1;
+}
+
+message ConsumosRegistradosCampania {
+	int32 idCampania = 1;
+	string nombreCampania= 2;
+	double montoTotalCampania = 3;
+	string estado = 4;
+    repeated PremiosPorAcreditar premiosPorAcreditar = 5;
+    double valorTotalConsumoCliente = 6;
+    int32 idCliente = 7;
+}
+
+message PremiosPorAcreditar {
+	string meta = 1;
+	string nombreRango = 2;
+	double valorPremio = 3;
+}

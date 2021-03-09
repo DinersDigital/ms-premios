@@ -1,60 +1,85 @@
 package ec.com.dinersclub.dddmodules.domain.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
+
 public class Premio {
 
-	private Integer id;
 	private Integer idCliente;
 	private Integer idCampania;
-	private Double valorPremio;
-	private String status;
-
-	public Integer getId() {
-		return id;
+	private String nombreCampania;
+	private Double montoTotalCampania;
+	private String estadoCampania;
+	private Double valorTotalConsumos;
+	private List<DetallePremio> listDetallePremio= new ArrayList<>();
+	
+	
+	
+	public Premio() {
+		
 	}
 
-	public Premio(Integer id, Integer idCliente, Integer idCampania, Double valorPremio, String status) {
-		super();
-		this.id = id;
+	public Premio(Integer idCliente, Integer idCampania, String nombreCampania, Double montoTotalCampania,
+			String estadoCampania, Double valorTotalConsumos, List<DetallePremio> listDetallePremio) {
+		
 		this.idCliente = idCliente;
 		this.idCampania = idCampania;
-		this.valorPremio = valorPremio;
-		this.status = status;
+		this.nombreCampania = nombreCampania;
+		this.montoTotalCampania = montoTotalCampania;
+		this.estadoCampania = estadoCampania;
+		this.valorTotalConsumos = valorTotalConsumos;
+		this.listDetallePremio = listDetallePremio;
 	}
 
+	public String getNombreCampania() {
+		return nombreCampania;
+	}
+	public void setNombreCampania(String nombreCampania) {
+		this.nombreCampania = nombreCampania;
+	}
+	public Double getMontoTotalCampania() {
+		return montoTotalCampania;
+	}
+	public void setMontoTotalCampania(Double montoTotalCampania) {
+		this.montoTotalCampania = montoTotalCampania;
+	}
 	public Integer getIdCliente() {
 		return idCliente;
 	}
-
 	public void setIdCliente(Integer idCliente) {
 		this.idCliente = idCliente;
 	}
-
 	public Integer getIdCampania() {
 		return idCampania;
 	}
-
 	public void setIdCampania(Integer idCampania) {
 		this.idCampania = idCampania;
 	}
-
-	public Double getValorPremio() {
-		return valorPremio;
+	public String getEstadoCampania() {
+		return estadoCampania;
+	}
+	public void setEstadoCampania(String estadoCampania) {
+		this.estadoCampania = estadoCampania;
+	}
+	public Double getValorTotalConsumos() {
+		return valorTotalConsumos;
+	}
+	public void setValorTotalConsumos(Double valorTotalConsumos) {
+		this.valorTotalConsumos = valorTotalConsumos;
+	}
+	public List<DetallePremio> getListDetallePremio() {
+		return listDetallePremio;
+	}
+	public void setListDetallePremio(List<DetallePremio> listDetallePremio) {
+		this.listDetallePremio = listDetallePremio;
 	}
 
-	public void setValorPremio(Double valorPremio) {
-		this.valorPremio = valorPremio;
-	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
 
-	public String getStatus() {
-		return status;
-	}
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+
+
 
 }

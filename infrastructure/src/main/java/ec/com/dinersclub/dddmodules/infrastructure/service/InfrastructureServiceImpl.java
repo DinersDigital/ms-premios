@@ -68,19 +68,13 @@ public class InfrastructureServiceImpl implements IRepository {
 	}
 
 	@Override
-	public List<Premio> getPremio() {
-		List<Premio> premioList = new ArrayList<>();
-		List<PremioEntity> premioEntityList = premioRepository.listAll();
-		if (!premioEntityList.isEmpty()) {
-			return PremioEntity.map(premioEntityList);
-		} else {
-			 
-            return premioList;
-        }
+	public List<Premio> getPremio(int id) {
+		return null;
 	}
 
 	@Override
-	public void deletePremio(String id) {
+	@Transactional
+	public void deletePremio(int id) {
 		PremioEntity.delete("id", id);
 		
 	}
