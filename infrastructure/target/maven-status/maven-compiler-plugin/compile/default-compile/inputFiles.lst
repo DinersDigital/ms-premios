@@ -1,0 +1,6 @@
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/service/InfrastructureServiceImpl.java
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/pgsql/entities/DetallePremioEntity.java
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/pgsql/repository/TarjetaRepository.java
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/pgsql/entities/PremioEntity.java
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/pgsql/entities/TarjetaEntity.java
+/home/centos/workspaces/workspace/ms-premios_develop/infrastructure/src/main/java/ec/com/dinersclub/dddmodules/infrastructure/pgsql/repository/PremioRepository.java
