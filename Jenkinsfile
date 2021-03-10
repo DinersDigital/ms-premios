@@ -358,7 +358,7 @@ spec:
                     def release = "v${APP_VERSION}-${env.BRANCH_NAME}"
                     
                     echo "Remove .properties microprofile"
-                    sh "rm -rf infrastructure/src/main/resources/META-INF/microprofile-config.properties"
+                    //sh "rm -rf infrastructure/src/main/resources/META-INF/microprofile-config.properties"
 
                     // Credentials
                     withCredentials([usernamePassword(credentialsId: 'github-eduardo', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
