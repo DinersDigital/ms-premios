@@ -32,7 +32,7 @@ spec:
         REGISTRY = "331022218908.dkr.ecr.us-east-1.amazonaws.com"
         REPOSITORY = "apiservice"
         PUSH = "${REGISTRY}/${REPOSITORY}"
-        NAMESPACE = "apiservice-workshop"
+        NAMESPACE = "apiservice-microservicios"
         URL_OPENSHIFT = "https://api.dinersclub-dev.b6r7.p1.openshiftapps.com:6443"
     }
     options {
