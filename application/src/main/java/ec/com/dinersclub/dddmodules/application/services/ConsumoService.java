@@ -27,7 +27,7 @@ public class ConsumoService {
 	@GrpcService("consumosRegistrados")     
 	ConsumosRegistradosGrpc.ConsumosRegistradosBlockingStub clienteConsumo;
 
-	public void createPremioCommand(Integer idCliente) {
+	public List<ConsumoQuery> createPremioCommand(Integer idCliente) {
 		List<ConsumoQuery> listaConsumoQuery = new ArrayList<>();
 		
 		
@@ -37,6 +37,7 @@ public class ConsumoService {
 			
 			premioRepository.crearPremio(new Premio(consumo.getIdCliente(), consumo.getIdCampania(), consumo.getNombreCampania(), consumo.getMontoTotalCampania(), consumo.getEstadoCampania(),consumo.getValorTotalConsumos(), consumo.getListDetallePremio()));
 		}
+		return listaConsumoQuery;
 		
 
 	}

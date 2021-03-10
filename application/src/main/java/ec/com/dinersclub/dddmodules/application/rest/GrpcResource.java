@@ -1,5 +1,7 @@
 package ec.com.dinersclub.dddmodules.application.rest;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.GET;
@@ -14,6 +16,7 @@ import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 
 import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreatePremioCommand;
 import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreateTarjetaCommand;
+import ec.com.dinersclub.dddmodules.application.cqrs.queries.dto.ConsumoQuery;
 import ec.com.dinersclub.dddmodules.application.services.ConsumoService;
 import ec.com.dinersclub.dddmodules.application.services.TarjetaService;
 
@@ -46,20 +49,14 @@ public class GrpcResource {
     
     @GET
     @Path("premios/{id}")
-    public Response add(@PathParam("id") Integer id) {
+    public List<ConsumoQuery> add(@PathParam("id") Integer id) {
     	
     	clientConsumo.createPremioCommand(id);
     	
-    	return Response.status(201).build();
+    	//return Response.status(201).build();
+    	
+    	return clientConsumo.createPremioCommand(id);
     } 
-    /*
-    @POST
-    @Path("premios")
-    public Response add(@RequestBody Map<String, String> body) {
-    	int id = Integer.parseInt(body.get("id"));
-    	clientConsumo.verificarConsumosCliente(id);
-    	return Response.status(201).build();
-    }*/
-  
+
      
 }
