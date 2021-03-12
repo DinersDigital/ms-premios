@@ -12,13 +12,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
-
-import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreatePremioCommand;
 import ec.com.dinersclub.dddmodules.application.cqrs.commands.dto.CreateTarjetaCommand;
-import ec.com.dinersclub.dddmodules.application.cqrs.queries.dto.ConsumoQuery;
 import ec.com.dinersclub.dddmodules.application.services.ConsumoService;
 import ec.com.dinersclub.dddmodules.application.services.TarjetaService;
+import ec.com.dinersclub.dddmodules.domain.model.Premio;
 
 
 
@@ -49,13 +46,10 @@ public class GrpcResource {
     
     @GET
     @Path("premios/{id}")
-    public List<ConsumoQuery> add(@PathParam("id") Integer id) {
+    public List<Premio> add(@PathParam("id") Integer id) {
     	
-    	clientConsumo.createPremioCommand(id);
-    	
-    	//return Response.status(201).build();
-    	
-    	return clientConsumo.createPremioCommand(id);
+	   	return clientConsumo.createPremioCommand(id);
+	   	
     } 
 
      

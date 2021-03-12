@@ -1,7 +1,7 @@
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/model/DetallePremio.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/exception/DomainException.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/repository/IRepository.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/model/Tarjeta.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/service/TarjetaServiceImpl.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/model/Premio.java
-/home/centos/workspaces/workspace/ms-premios_develop/domain/src/main/java/ec/com/dinersclub/dddmodules/domain/service/ITarjetaService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\repository\IRepository.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\exception\DomainException.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\model\Tarjeta.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\service\ITarjetaService.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\model\DetallePremio.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\model\Premio.java
+C:\Users\bayteq\Documents\GitHub\ms-premios\domain\src\main\java\ec\com\dinersclub\dddmodules\domain\service\TarjetaServiceImpl.java

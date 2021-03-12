@@ -1,19 +1,19 @@
 package ec.com.dinersclub.dddmodules.infrastructure.pgsql.entities;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import ec.com.dinersclub.dddmodules.domain.model.Premio;
-import ec.com.dinersclub.dddmodules.domain.model.Tarjeta;
+import org.hibernate.annotations.Cascade;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 @Entity
@@ -21,47 +21,24 @@ import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 public class PremioEntity extends PanacheEntityBase {
 
 	@Id
-	@GeneratedValue
-	private Integer id;
+	@SequenceGenerator(
+	        name = "secuenciaPremio",
+	        sequenceName = "pre_id_seq",
+	        allocationSize = 1,
+	        initialValue = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "secuenciaPremio")
+	@Column(name="idpremio", nullable=false, updatable =false)
+	private Integer idPremio;
 	private Integer idCliente;
 	private Integer idCampania;
 	private String nombreCampania;
 	private Double montoTotalCampania;
 	private String estadoCampania;
 	private Double valorTotalConsumos;
+	private String estadoPremio;
 	
-	
-	@OneToMany(mappedBy = "premioEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<DetallePremioEntity> listDetallePremioEntity= new ArrayList<>();
-
-	public PremioEntity() {
-
-	}
-	
-	
-
-	public PremioEntity(Integer idCliente, Integer idCampania, String nombreCampania, Double montoTotalCampania,
-			String estadoCampania, Double valorTotalConsumos, List<DetallePremioEntity> listDetallePremioEntity) {
-		super();
-		this.idCliente = idCliente;
-		this.idCampania = idCampania;
-		this.nombreCampania = nombreCampania;
-		this.montoTotalCampania = montoTotalCampania;
-		this.estadoCampania = estadoCampania;
-		this.valorTotalConsumos = valorTotalConsumos;
-		this.listDetallePremioEntity = listDetallePremioEntity;
-	}
-
-	public PremioEntity(Premio premio) {
-
-		this.idCliente = premio.getIdCliente();
-		this.idCampania = premio.getIdCampania();
-		this.nombreCampania = premio.getNombreCampania();
-		this.montoTotalCampania = premio.getMontoTotalCampania();
-		this.estadoCampania = premio.getEstadoCampania();
-		this.valorTotalConsumos = premio.getValorTotalConsumos();
-		this.listDetallePremioEntity = premio.getListDetallePremio().stream().map(m -> new DetallePremioEntity(m.getId(), m.getMeta() , m.getNombreRango(), m.getValorPremio())).collect(Collectors.toList());
-	}
+	@OneToMany(mappedBy = "premioEntity",cascade = CascadeType.ALL, orphanRemoval = true)
+	private List<DetallePremioEntity> listDetallePremioEntity;
 
 	public String getNombreCampania() {
 		return nombreCampania;
@@ -77,10 +54,6 @@ public class PremioEntity extends PanacheEntityBase {
 
 	public void setMontoTotalCampania(Double montoTotalCampania) {
 		this.montoTotalCampania = montoTotalCampania;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
 	}
 
 	public Integer getIdCliente() {
@@ -115,6 +88,22 @@ public class PremioEntity extends PanacheEntityBase {
 		this.valorTotalConsumos = valorTotalConsumos;
 	}
 
+	public String getEstadoPremio() {
+		return estadoPremio;
+	}
+
+	public void setEstadoPremio(String estadoPremio) {
+		this.estadoPremio = estadoPremio;
+	}
+
+	public Integer getIdPremio() {
+		return idPremio;
+	}
+
+	public void setIdPremio(Integer idPremio) {
+		this.idPremio = idPremio;
+	}
+
 	public List<DetallePremioEntity> getListDetallePremioEntity() {
 		return listDetallePremioEntity;
 	}
@@ -123,8 +112,8 @@ public class PremioEntity extends PanacheEntityBase {
 		this.listDetallePremioEntity = listDetallePremioEntity;
 	}
 
-	public Integer getId() {
-		return id;
-	}
+
+	
+	
 
 }

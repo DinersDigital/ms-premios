@@ -5,7 +5,10 @@ import java.util.List;
 
 
 
+
 public class Premio {
+	
+	
 
 	private Integer idCliente;
 	private Integer idCampania;
@@ -14,13 +17,26 @@ public class Premio {
 	private String estadoCampania;
 	private Double valorTotalConsumos;
 	private List<DetallePremio> listDetallePremio= new ArrayList<>();
-	
+	private String estadoPremio;
 	
 	
 	public Premio() {
 		
 	}
 
+	public Premio(Integer idCliente, Integer idCampania, String nombreCampania, Double montoTotalCampania,
+			String estadoCampania, Double valorTotalConsumos, List<DetallePremio> listDetallePremio, String estadoPremio) {
+		
+		this.idCliente = idCliente;
+		this.idCampania = idCampania;
+		this.nombreCampania = nombreCampania;
+		this.montoTotalCampania = montoTotalCampania;
+		this.estadoCampania = estadoCampania;
+		this.valorTotalConsumos = valorTotalConsumos;
+		this.listDetallePremio = listDetallePremio;
+		this.estadoPremio = estadoPremio;
+	}
+	
 	public Premio(Integer idCliente, Integer idCampania, String nombreCampania, Double montoTotalCampania,
 			String estadoCampania, Double valorTotalConsumos, List<DetallePremio> listDetallePremio) {
 		
@@ -31,6 +47,7 @@ public class Premio {
 		this.estadoCampania = estadoCampania;
 		this.valorTotalConsumos = valorTotalConsumos;
 		this.listDetallePremio = listDetallePremio;
+		
 	}
 
 	public String getNombreCampania() {
@@ -76,10 +93,12 @@ public class Premio {
 		this.listDetallePremio = listDetallePremio;
 	}
 
+	public String getEstadoPremio() {
+		return estadoPremio;
+	}
 
-
-
-
-
+	public void setEstadoPremio(String estadoPremio) {
+		this.estadoPremio = estadoPremio;
+	}
 
 }

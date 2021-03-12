@@ -2,10 +2,11 @@ package ec.com.dinersclub.dddmodules.domain.model;
 
 public class DetallePremio {
 
-	private Integer id;
+	
 	private String meta;
 	private String nombreRango;
 	private Double valorPremio;
+	private String estado;
 	
 	
 	
@@ -14,26 +15,23 @@ public class DetallePremio {
 	}
 
 
-	public DetallePremio(Integer id, String meta, String nombreRango, Double valorPremio) {
+	public DetallePremio(String meta, String nombreRango, Double valorPremio, String estado) {
 		
-		this.id = id;
 		this.meta = meta;
 		this.nombreRango = nombreRango;
 		this.valorPremio = valorPremio;
+		this.estado = estado;
 	}
 	
 	
+
 	public DetallePremio(String meta, String nombreRango, Double valorPremio) {
-		
+		super();
 		this.meta = meta;
 		this.nombreRango = nombreRango;
 		this.valorPremio = valorPremio;
 	}
 
-
-	public Integer getId() {
-		return id;
-	}
 
 	public String getMeta() {
 		return meta;
@@ -52,6 +50,15 @@ public class DetallePremio {
 	}
 	public void setValorPremio(Double valorPremio) {
 		this.valorPremio = valorPremio;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 	
 	

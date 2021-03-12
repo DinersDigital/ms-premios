@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import ec.com.dinersclub.dddmodules.application.cqrs.queries.dto.ConsumoQuery;
 import ec.com.dinersclub.dddmodules.application.grpc.ConsumosRegistradosCampania;
 import ec.com.dinersclub.dddmodules.application.grpc.ConsumosRegistradosGrpc;
 import ec.com.dinersclub.dddmodules.application.grpc.ConsumosRegistradosRequest;
@@ -15,6 +14,7 @@ import ec.com.dinersclub.dddmodules.application.grpc.ConsumosRegistradosResponse
 import ec.com.dinersclub.dddmodules.domain.model.DetallePremio;
 import ec.com.dinersclub.dddmodules.domain.model.Premio;
 import ec.com.dinersclub.dddmodules.domain.repository.IRepository;
+import ec.com.dinersclub.dddmodules.infrastructure.pgsql.entities.DetallePremioEntity;
 import io.quarkus.grpc.runtime.annotations.GrpcService;
 
 @ApplicationScoped 
@@ -27,27 +27,27 @@ public class ConsumoService {
 	@GrpcService("consumosRegistrados")     
 	ConsumosRegistradosGrpc.ConsumosRegistradosBlockingStub clienteConsumo;
 
-	public List<ConsumoQuery> createPremioCommand(Integer idCliente) {
-		List<ConsumoQuery> listaConsumoQuery = new ArrayList<>();
+	public List<Premio> createPremioCommand(Integer idCliente) {
+		List<Premio> listaConsumoQuery = new ArrayList<>();
 		
 		
 		listaConsumoQuery = verificarConsumosCliente(idCliente);
 		
-		for (ConsumoQuery consumo : listaConsumoQuery ) {
+		for (Premio premio : listaConsumoQuery ) {
 			
-			premioRepository.crearPremio(new Premio(consumo.getIdCliente(), consumo.getIdCampania(), consumo.getNombreCampania(), consumo.getMontoTotalCampania(), consumo.getEstadoCampania(),consumo.getValorTotalConsumos(), consumo.getListDetallePremio()));
+			premioRepository.crearPremio(new Premio(premio.getIdCliente(), premio.getIdCampania(), premio.getNombreCampania(), premio.getMontoTotalCampania(), premio.getEstadoCampania(),premio.getValorTotalConsumos(), premio.getListDetallePremio(),premio.getEstadoPremio()));
 		}
 		return listaConsumoQuery;
 		
 
 	}
 	
-	public List<ConsumoQuery>  verificarConsumosCliente(Integer idCliente) {
+	public List<Premio>  verificarConsumosCliente(Integer idCliente) {
 		ConsumosRegistradosResponse listConsumosResponse = clienteConsumo.verificarConsumosRegistradosCliente(ConsumosRegistradosRequest.newBuilder().setIdCliente(idCliente).build());
 		
 		List<ConsumosRegistradosCampania> lista = listConsumosResponse.getConsumosRegistradosCampaniaList();
 		
-		return lista.stream().map(m -> new ConsumoQuery(m.getIdCliente(),m.getIdCampania(), m.getNombreCampania(),m.getMontoTotalCampania(), m.getEstado(), m.getValorTotalConsumoCliente(), 
+		return lista.stream().map(m -> new Premio(m.getIdCliente(),m.getIdCampania(), m.getNombreCampania(),m.getMontoTotalCampania(), m.getEstado(), m.getValorTotalConsumoCliente(), 
 				obtenerListaPremiosAcumulados(m))).collect(Collectors.toList());
 				
 	}
@@ -55,5 +55,6 @@ public class ConsumoService {
 	private List<DetallePremio> obtenerListaPremiosAcumulados(ConsumosRegistradosCampania m) {
 		return m.getPremiosPorAcreditarList().stream().map(p  -> new DetallePremio(p.getMeta(), p.getNombreRango(), p.getValorPremio())).collect(Collectors.toList());
 	}
+	
 
 }
